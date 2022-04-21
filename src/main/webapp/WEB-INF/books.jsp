@@ -49,8 +49,7 @@
 						<td><c:out value="${book.user.name }"></c:out></td>
 						<td><form action="/remove/book/${book.id}/method" method="post">
 	    						<input type="hidden" name="_method" value="delete">
-	    						<input type="submit" value="Delete"></td>
-							</form>
+	    						<input type="submit" value="Delete"></td></form>
 						<td><c:if test="${loggedInUser.id == book.user.id}"></c:if></td>
 					</tr>
 				</c:forEach>

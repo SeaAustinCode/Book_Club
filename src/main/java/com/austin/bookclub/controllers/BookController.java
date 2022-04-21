@@ -78,6 +78,7 @@ public class BookController {
 		}
 	}
 	
+	
 	// SHOW --- Individual books page with a book and all it's details
 	@RequestMapping("/books/{id}")
 	public String showIndividualBook(@PathVariable("id")Long id, Model model, HttpSession session) {
